@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* GENERAL STYLING */
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* font sizes */
+.t-lg {
+    font-size: 1.5rem;
+}
+
+.t-md {
+    font-size: 1.3rem;
+}
+
+
+
+/* colors */
+.color-main {
+    color: #5BC9E4;
+}
+
+.color-accent {
+    color: #3E3E40;
+}
+
+.headerWeight {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header-normal {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+}
+
+
+/* PERKS SECTION STYLING */
+.perksContainer {
+    place-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.image {
+    width: 13rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.card {
+    width: 15rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cardTitle {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* PERKS SECTION STYLING */
+
+/* APPLICATION FORM SECTION STYLING */
+.background-pic{
+    position: relative;
+    background-image: url('./assets/images/picBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.outerCont {
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.formContainer {
+   overflow: hidden;
+    border: #5BC9E4 2px solid;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: row;
+    border: #3E3E40 1px solid;
+    border-radius: 0.5rem;
+    background: transparent;
+    height: 3rem;
+    color: #3E3E40;
+    place-items: center;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin-left: 0.8rem;
+}
+
+.resume-input {
+    position: absolute;
+    overflow: hidden;
+    width: 20px;
+}
+
+
+.resume-label {
+    margin-left: 0.8rem;
+    color: #3E3E40;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button-container{
+    text-align: center;
+    overflow: hidden;
+}
+
+.button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    border: #3E3E40 2px solid;
+
+}
+
+/* APPLICATION FORM SECTION STYLING */
+
+
+/* NAVBAR */
+nav {
+    background-color: #5BC9E4;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 0px) {}
+
+@media screen and (min-width: 576px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2px;
+        place-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2px;
+        place-items: center;
+    }
+
+    .card {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200) {}
+
+@media screen and (min-width: 576px) {
+    /* Styles for small screens */
+}
