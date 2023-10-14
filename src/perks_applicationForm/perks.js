@@ -48,11 +48,6 @@ function Perks() {
             <div className='background-pic'>
                 <Form className='absolute' />
             </div>
-         
-
-
-
-
         </div>
     );
 }
