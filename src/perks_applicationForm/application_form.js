@@ -65,100 +65,94 @@ function Form() {
     };
 
     return (
+        <div className='formContainer'>
+            <h4 className='header-normal'>INTERNSHIP APPLICATION FORM</h4>
+            <form onSubmit={handleSubmit} className='form'>
 
-        <div className='outerCont'>
-            <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
-            <div className='formContainer'>
-                <h4 className='header-normal'>INTERNSHIP APPLICATION FORM</h4>
-                <form onSubmit={handleSubmit} className='form'>
-
-                    {/* FIRST ROW */}
-                    <div className='first-row'>
-                        <div className="input-field">
-                            <img src={user} alt="user" />
-                            <input
-                                id='name'
-                                type="text"
-                                placeholder="Name"
-                                className="input" />
-                        </div>
-                        <div className="input-field">
-                            <img src={address} alt="user" />
-                            <input
-                                id='address'
-                                type="text"
-                                placeholder="Address"
-                                className="input" />
-                        </div>
+                {/* FIRST ROW */}
+                <div className='row'>
+                    <div className="input-field col">
+                        <img src={user} alt="user" className='icons' />
+                        <input
+                            id='name'
+                            type="text"
+                            placeholder="Name"
+                            className="input" />
                     </div>
-
-                    {/* SECOND ROW */}
-                    <div className='second-row flex gap-5'>
-                        <div className="input-field">
-                            <img src={birthday} alt="user" />
-                            <input
-                                type="date"
-                                id="birthdate"
-                                value={formData.birthdate}
-                                onChange={handleChange}
-                                className="input" />
-                        </div>
-                        <div className="input-field">
-                            <img src={phone} alt="user" />
-                            <input
-                                id='contact'
-                                type="tel"
-                                placeholder="Contact"
-                                className="input" />
-                        </div>
-                        <div className="input-field">
-                            <img src={email} alt="user" />
-                            <input
-                                id='email'
-                                type="email"
-                                placeholder="Email"
-                                className="input text-gray" />
-                        </div>
+                    <div className="input-field col">
+                        <img src={address} alt="user" className='icons'/>
+                        <input
+                            id='address'
+                            type="text"
+                            placeholder="Address"
+                            className="input" />
                     </div>
+                </div>
 
-
-                    {/* THIRD ROW */}
-                    <div className='third-row'>
-                        <div className="input-field">
-                            <img src={course} alt="user" />
-                            <input
-                                type="text"
-                                id="course"
-                                placeholder="Course"
-                                className="input" />
-                        </div>
-                        <div className="input-field">
-                            <img src={university} alt="user" />
-                            <input
-                                id='uni'
-                                type="text"
-                                placeholder="University"
-                                className="input" />
-                        </div>
-                        <div className="input-field">
-                            <img src={resume} alt="user" />
-                            <input
-                                id='resume'
-                                type="file"
-                                placeholder="Resume"
-                                className="input resume-input invisible" />
-
-                            <label className='resume-label' htmlFor="resume">Upload Resume <span className='text-red-500'>*</span></label>
-                        </div>
+                {/* SECOND ROW */}
+                <div className='row'>
+                    <div className="input-field col">
+                        <img src={birthday} alt="user" className='icons'/>
+                        <input
+                            type="date"
+                            id="birthdate"
+                            value={formData.birthdate}
+                            onChange={handleChange}
+                            className="input" />
                     </div>
-                    <div className='button-container'>
-                        <button className='button' type="submit">SUBMIT APPLICATION</button>
+                    <div className="input-field col">
+                        <img src={phone} alt="user" className='icons'/>
+                        <input
+                            id='contact'
+                            type="tel"
+                            placeholder="Contact"
+                            className="input" />
                     </div>
+                    <div className="input-field col">
+                        <img src={email} alt="user" className='icons'/>
+                        <input
+                            id='email'
+                            type="email"
+                            placeholder="Email"
+                            className="input text-gray" />
+                    </div>
+                </div>
 
-                </form>
-            </div >
+
+                {/* THIRD ROW */}
+                <div className='row'>
+                    <div className="input-field col">
+                        <img src={course} alt="user" className='icons'/>
+                        <input
+                            type="text"
+                            id="course"
+                            placeholder="Course"
+                            className="input" />
+                    </div>
+                    <div className="input-field col">
+                        <img src={university} alt="user" className='icons'/>
+                        <input
+                            id='uni'
+                            type="text"
+                            placeholder="University"
+                            className="input" />
+                    </div>
+                    <div className="input-field col">
+                        <img src={resume} alt="user" className='icons'/>
+                        <input
+                            id='resume'
+                            type="file"
+                            placeholder="Resume"
+                            className="input resume-input invisible" />
+
+                        <label className='resume-label' htmlFor="resume">Upload Resume <span className='text-red-500'>*</span></label>
+                    </div>
+                </div>
+                <div className='button-container'>
+                    <button className='button' type="submit">SUBMIT APPLICATION</button>
+                </div>
+            </form>
         </div >
-
     );
 }
 

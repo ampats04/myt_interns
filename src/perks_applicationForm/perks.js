@@ -13,7 +13,8 @@ import Picture from './assets/images/picBg.png'
 
 //components import
 import NavBar from './navbar';
-import Form from './application_form'
+import Form from './application_form';
+import AnotherForm from './appForm';
 
 function Perks() {
     return (
@@ -45,8 +46,11 @@ function Perks() {
                 </div>
             </div>
 
-            <div className='background-pic'>
-                <Form className='absolute' />
+            <div className='container'>
+                <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
+                <div className='background-pic'>
+                    <Form />
+                </div>
             </div>
         </div>
     );
