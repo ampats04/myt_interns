@@ -3,35 +3,29 @@ import './styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
+//react component
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
 import Logo from './assets/images/moduleZeroLogo.png'
 
 
 function NavBar() {
   return (
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary navBarStyle">
-  <div class="container-fluid">
-    <a className='navbar-brand' href="#"> <img className='logo' src={Logo} alt="Logo" /> </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <Navbar expand = "lg" className='bg-body-tertiary container-fluid'>
+      <img src={Logo} className='navbar-logo'/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ma-auto mx-5">
+            <Nav.Link href="#link">Home</Nav.Link>
+            <Nav.Link href="#link">About us</Nav.Link>
+            <Nav.Link href="#link">Internship Perks</Nav.Link>
+            <Nav.Link href="#link">Apply now</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+    </Navbar>
   );
 }
 

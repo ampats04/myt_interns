@@ -38,7 +38,7 @@
 }
 
 .logo {
-    width: 10rem;
+    width: 20rem;
     height: auto;
 }
 
@@ -159,8 +159,13 @@
 
 
 /* NAVBAR */
-nav {
-    background-color: #5BC9E4;
+.navbar-logo{
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+.Nav.Link{
+    padding-right: 40px;
 }
 
 /* MEDIA QUERIES */
