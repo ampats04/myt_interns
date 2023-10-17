@@ -164,8 +164,29 @@
     margin-left: 1rem;
 }
 
-.Nav.Link{
+.nav-links{
     padding-right: 40px;
+    text-decoration: none;
+    color:#3E3E40;
+}
+
+
+.nav-links:hover{
+    color:#5BC9E4;
+}
+
+.nav-links::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #5BC9E4;
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.nav-links:hover::after{
+    opacity: 1;
 }
 
 /* FOOTER */
@@ -214,6 +235,9 @@
 
 @media screen and (min-width: 1200) {}
 
-@media screen and (min-width: 576px) {
-    /* Styles for small screens */
+@media screen and (max-width: 648px) {
+    .nav-links::after{
+        content: '';
+        width: 40%;
+    }
 }

@@ -19,10 +19,10 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ma-auto mx-5">
-            <Nav.Link href="#link">Home</Nav.Link>
-            <Nav.Link href="#link">About us</Nav.Link>
-            <Nav.Link href="#link">Internship Perks</Nav.Link>
-            <Nav.Link href="#link">Apply now</Nav.Link>
+            <Nav.Link class="nav-links" href="#link">Home</Nav.Link>
+            <Nav.Link class="nav-links" href="#link">About us</Nav.Link>
+            <Nav.Link class="nav-links" href="#link">Internship Perks</Nav.Link>
+            <Nav.Link class="nav-links" href="#link">Apply now</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
