@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 //react component
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -19,10 +18,10 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ma-auto mx-5">
-            <Nav.Link href="#link">Home</Nav.Link>
-            <Nav.Link href="#link">About us</Nav.Link>
-            <Nav.Link href="#link">Internship Perks</Nav.Link>
-            <Nav.Link href="#link">Apply now</Nav.Link>
+            <Nav.Link className='nav-links'>Home</Nav.Link>
+            <Nav.Link className='nav-links'>About us</Nav.Link>
+            <Nav.Link className='nav-links'>Internship Perks</Nav.Link>
+            <Nav.Link className='nav-links'>Apply now</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

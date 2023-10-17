@@ -14,6 +14,7 @@ import Picture from './assets/images/picBg.png'
 //components import
 import NavBar from './navbar';
 import Form from './application_form'
+import Footer from './footer'
 
 function Perks() {
     return (
@@ -47,6 +48,9 @@ function Perks() {
 
             <div className='background-pic'>
                 <Form className='absolute' />
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     );
