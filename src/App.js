@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import './Pages/Perks/perks';
-import Perks from './Pages/Perks/perks'
+
+import './css/App.css';
+import Perks from './Pages/Perks/perks.js'
+
 import ApplicationForm from './Pages/Application/application_form'
-import TechstackAndInterns from './techstack_interns/TechstackAndInterns';
+import TechstackAndInterns from './Pages/TechStack_and_Interns/TechstackAndInterns.js';
 
 
 
@@ -11,13 +11,10 @@ function App() {
   return (
     <div className="App">
       
-      /**
-      * Please create main page for this one ty
-       */
+   
       <Perks/>
       <TechstackAndInterns/>
-    /**
-     */
+   
     </div>
   );
 }

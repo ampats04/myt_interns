@@ -1,12 +1,12 @@
 //styles import
-import '../../css/'
+import '../../css/styles.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import discordSVG from "../perks_applicationForm/assets/svg/discordsvg.svg"
-import emailSVG from "../perks_applicationForm/assets/svg/emailsvg.svg"
-import facebookSVG from "../perks_applicationForm/assets/svg/facebooksvg.svg"
-import githubSVG from "../perks_applicationForm/assets/svg/githubsvg.svg"
+import discordSVG from "../../Assets/svg/discordsvg.svg"
+import emailSVG from "../../Assets/svg/emailsvg.svg"
+import facebookSVG from "../../Assets/svg/facebooksvg.svg"
+import githubSVG from "../../Assets/svg/githubsvg.svg"
 
 import React from 'react';
 

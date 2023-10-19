@@ -4,9 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 //Asset Imports
 import interns from '../../Assets/images/interns.jpg';
 
-
-
-
 function Slider() {
   return (
     <Carousel 
