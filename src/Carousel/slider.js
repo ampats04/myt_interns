@@ -1,6 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-
 //Asset Imports
 import interns from '../../src/images/interns.jpg';
 

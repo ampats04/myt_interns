@@ -17,9 +17,8 @@ function TechstackAndInterns() {
     return (
       
       <div class="container App">
-      <h1 class="techstack-header ">TECHNOLOGY STACK</h1>
-
-
+      <h1 class="techstack-header ">TECHNOLOGY <span class='intern-color'>STACK</span></h1>
+      
       <div class="row justify-content-center img-margin">
       <div class="col-12 col-sm-4 col-md-3 col-lg-2">
         <img src={frontEnd} alt="" class="img-fluid" />

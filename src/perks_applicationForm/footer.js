@@ -11,7 +11,8 @@ import React from 'react';
 
 function Footer(){
     return (
-        <div className='container mt-1'>
+        <div className="container-fluid">
+             <div className='container'>
             <div className='grid-container d-flex justify-content-center '>
             <div class="row">
                 <div class="col-3 d-flex justify-content-center">
@@ -29,11 +30,12 @@ function Footer(){
             </div>
              </div>
              <div class = "col d-flex justify-content-center mt-3">
-                    <h5>MYT SoftDev Solutions Incoporated</h5>
+                    <h5 className ="footer-font">MYT SoftDev Solutions Incoporated</h5>
                 </div>
                 <div class ="col d-flex justify-content-center">
-                     <h6>Innovative. Intutiative. Powerful.</h6>
+                     <h6 className ="footer-font">Innovative. Intutiative. Powerful.</h6>
                 </div>
+            </div>
         </div>
     );
 }

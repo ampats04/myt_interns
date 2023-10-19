@@ -19,8 +19,7 @@ import Footer from './footer'
 function Perks() {
     return (
         <div>
-            <NavBar />
-            <div className='perksContainer'>
+            <div className='perksContainer' id='perks'>
                 <h4 className='headerWeight t-lg'>INTERNSHIP <span className='t-lg color-main'>PERKS</span></h4>
                 <div className='cardContainer'>
                     <div className='card'>
@@ -48,9 +47,6 @@ function Perks() {
 
             <div className='background-pic'>
                 <Form className='absolute' />
-            </div>
-            <div>
-                <Footer/>
             </div>
         </div>
     );

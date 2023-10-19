@@ -16,8 +16,7 @@
   font-family: 'Poppins';
   color: #3E3E40;
   font-weight: bold;
-  margin-bottom: 8rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   font-size: 1.5rem;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .img-margin {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .intern-color {
