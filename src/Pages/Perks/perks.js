@@ -12,9 +12,9 @@ import Mentorship from './assets/images/mentorship.png';
 import Picture from './assets/images/picBg.png'
 
 //components import
-import NavBar from './navbar';
-import Form from './application_form'
-import Footer from './footer'
+import NavBar from '../../Components/Navbar/navbar';
+import Form from '../Application/application_form'
+import Footer from '../../Components/Footer/footer'
 
 function Perks() {
     return (

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './technology_stack.css';
-import Slider from '../../src/Carousel/slider';
+import Slider from '../Components/Carousel/slider';
 
 
 // images
