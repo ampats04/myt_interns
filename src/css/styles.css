@@ -44,13 +44,8 @@
     text-align: center;
 }
 
-<<<<<<< HEAD:src/perks_applicationForm/styles.css
-.logo-cont {
-    width: 100%;
-=======
 .logo {
     width: 20rem;
->>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/css/styles.css
     height: auto;
     position: absolute;
     padding: 0.5rem;
@@ -124,7 +119,7 @@
 /* APPLICATION FORM SECTION STYLING */
 .background-pic{
     position: relative;
-    background-image: url('../assets/images/bgImage.png');
+    background-image: url('../Assets/images/bgImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -134,6 +129,12 @@
     border-radius: 2rem;
     border: 0.5rem solid rgb(209, 209, 209);
     place-items: center;
+}
+
+.first-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .row{
@@ -329,16 +330,9 @@
     
 }
 
-<<<<<<< HEAD:src/perks_applicationForm/styles.css
-@media screen and (min-width: 576px) {
-    /* Styles for small screens */
-}
-
-=======
 @media screen and (max-width: 648px) {
     .nav-links::after{
         content: '';
         width: 40%;
     }
 }
->>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/css/styles.css

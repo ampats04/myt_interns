@@ -12,7 +12,7 @@ import '../About/about_styles.css'
 
 
 //Asset Imports
-import Logo from '../../assets/images/moduleZeroLogo.png'
+import Logo from '../../Assets/images/moduleZeroLogo.png'
 
 export default function About(){
 

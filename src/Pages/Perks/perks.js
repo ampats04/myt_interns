@@ -5,27 +5,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 //assets import
-<<<<<<< HEAD:src/perks_applicationForm/perks.js
-import Accesibility from './assets/images/accesibility.png';
-import Allowance from './assets/images/allowance.png';
-import Gatherings from './assets/images/gathering.png';
-import Mentorship from './assets/images/mentorship.png';
+import Accesibility from '../../Assets/images/accesibility.png';
+import Allowance from '../../Assets/images/allowance.png';
+import Gatherings from '../../Assets/images/gathering.png';
+import Mentorship from '../../Assets/images/mentorship.png';
 
 //components import
-import NavBar from './navbar';
-import Form from './application_form';
-=======
-import Accesibility from '../../assets/images/accesibility.png';
-import Allowance from '../../assets/images/allowance.png';
-import Gatherings from '../../assets/images/gathering.png';
-import Mentorship from '../../assets/images/mentorship.png';
-import Picture from '../../assets/images/picBg.png'
-
-//components import
-import NavBar from '../../components/Navbar/navbar';
-import Form from '../Application/application_form.js';
-import Footer from '../../components/Footer/footer';
->>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/Pages/Perks/perks.js
+import NavBar from '../../Components/Navbar/navbar';
+import Form from '../Application/application_form';
+import Footer from '../../Components/Footer/footer';
 
 function Perks() {
     return (
@@ -60,7 +48,6 @@ function Perks() {
             <div className='container'>
                 <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
                 <div className='background-pic'>
-                    
                     <Form className='absolute' />
                 </div>
             </div>

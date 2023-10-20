@@ -8,8 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-import Logo from '../../assets/images/moduleZeroLogo.png'
+import Logo from '../../Assets/images/moduleZeroLogo.png'
 
 
 function NavBar() {
