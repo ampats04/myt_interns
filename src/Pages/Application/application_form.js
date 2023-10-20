@@ -10,14 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 //icons import
-import user from '../../Assets/icons/user.png'
-import address from '../../Assets/icons/location.png'
-import birthday from '../../Assets/icons/date-of-birth.png'
-import phone from '../../Assets/icons/call.png'
-import email from '../../Assets/icons/mail.png'
-import course from '../../Assets/icons/learning.png'
-import university from '../../Assets/icons/college.png'
-import resume from '../../Assets/icons/upload.png'
+import user from '../../assets/icons/user.png'
+import address from '../../assets/icons/location.png'
+import birthday from '../../assets/icons/date-of-birth.png'
+import phone from '../../assets/icons/call.png'
+import email from '../../assets/icons/mail.png'
+import course from '../../assets/icons/learning.png'
+import university from '../../assets/icons/college.png'
+import resume from '../../assets/icons/upload.png'
 
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';

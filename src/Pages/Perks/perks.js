@@ -5,16 +5,16 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 //assets import
-import Accesibility from '../../Assets/images/accesibility.png';
-import Allowance from '../../Assets/images/allowance.png';
-import Gatherings from '../../Assets/images/gathering.png';
-import Mentorship from '../../Assets/images/mentorship.png';
-import Picture from '../../Assets/images/picBg.png'
+import Accesibility from '../../assets/images/accesibility.png';
+import Allowance from '../../assets/images/allowance.png';
+import Gatherings from '../../assets/images/gathering.png';
+import Mentorship from '../../assets/images/mentorship.png';
+import Picture from '../../assets/images/picBg.png'
 
 //components import
-import NavBar from '../../Components/Navbar/navbar';
-import Form from '../Application/application_form'
-import Footer from '../../Components/Footer/footer'
+import NavBar from '../../components/Navbar/navbar';
+import Form from '../Application/application_form.js';
+import Footer from '../../components/Footer/footer';
 
 function Perks() {
     return (

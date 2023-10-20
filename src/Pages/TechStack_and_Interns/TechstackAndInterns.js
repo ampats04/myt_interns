@@ -1,17 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './technology_stack.css';
-import Slider from '../../Components/Carousel/slider';
+import Slider from '../../components/Carousel/slider';
 
 
 // images
-import frontEnd from '../../Assets/images/frontEnd.jpg';
-import backEnd from '../../Assets/images/backEnd.jpg';
-import databaseServer from '../../Assets/images/databaseServer.jpg';
-import Others from '../../Assets/images/others.jpg';
-import img1 from '../../Assets/images/img1.jpg';
-import img2 from '../../Assets/images/img2.jpg';
-import img3 from '../../Assets/images/img3.jpg';
-import img4 from '../../Assets/images/img4.jpg';
+import frontEnd from '../../assets/images/frontEnd.jpg';
+import backEnd from '../../assets/images/backEnd.jpg';
+import databaseServer from '../../assets/images/databaseServer.jpg';
+import Others from '../../assets/images/others.jpg';
+import img1 from '../../assets/images/img1.jpg';
+import img2 from '../../assets/images/img2.jpg';
+import img3 from '../../assets/images/img3.jpg';
+import img4 from '../../assets/images/img4.jpg';
 
 function TechstackAndInterns() {
     return (

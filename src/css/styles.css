@@ -83,7 +83,7 @@
 /* APPLICATION FORM SECTION STYLING */
 .background-pic{
     position: relative;
-    background-image: url('../Assets/images/bgImage.png');
+    background-image: url('../assets/images/bgImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
