@@ -44,8 +44,13 @@
     text-align: center;
 }
 
+<<<<<<< HEAD:src/perks_applicationForm/styles.css
 .logo-cont {
     width: 100%;
+=======
+.logo {
+    width: 20rem;
+>>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/css/styles.css
     height: auto;
     position: absolute;
     padding: 0.5rem;
@@ -119,7 +124,7 @@
 /* APPLICATION FORM SECTION STYLING */
 .background-pic{
     position: relative;
-    background-image: url('./assets/images/picBg.png');
+    background-image: url('../assets/images/bgImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -222,9 +227,42 @@
 
 
 /* NAVBAR */
-nav {
-    background-color: #5BC9E4;
+.navbar-logo{
+    width: 20rem;
+    margin-left: 1rem;
 }
+
+.nav-links{
+    padding-right: 40px;
+    text-decoration: none;
+    color:#3E3E40;
+}
+
+
+.nav-links:hover{
+    color:#5BC9E4;
+}
+
+.nav-links::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #5BC9E4;
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.nav-links:hover::after{
+    opacity: 1;
+}
+
+/* FOOTER */
+.svg-footer-icons{
+    width: 35px;
+    margin-top: 20px;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 990px) {
@@ -291,7 +329,16 @@ nav {
     
 }
 
+<<<<<<< HEAD:src/perks_applicationForm/styles.css
 @media screen and (min-width: 576px) {
     /* Styles for small screens */
 }
 
+=======
+@media screen and (max-width: 648px) {
+    .nav-links::after{
+        content: '';
+        width: 40%;
+    }
+}
+>>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/css/styles.css

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+.techstack-header {
+  font-family: 'Poppins';
+  color: #3E3E40;
+  font-weight: bold;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  font-size: 1.5rem;
+}
+
+.meettheinterns-header {
+  font-family: 'Poppins';
+  color: #3E3E40;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 8rem;
+}
+
+.img-margin {
+  margin-top: 8rem;
+}
+
+.intern-color {
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #5BC9E4;
+  font-size: 1.5rem;
+}
+
+
+
+
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 2rem;
+}
+
+.solution-card {
+  width: 20rem;
+  height: auto;
+}
+
+.card-image{
+  width: 15rem;
+}
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(min-width: 640px) {
+  .card-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+
+@media(min-width: 1107px) {
+  .card-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    place-content: center;
+  }
+}
+
+
+

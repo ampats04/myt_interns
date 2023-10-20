@@ -1,10 +1,11 @@
 //styles import
-import './styles.css'
+import '../../css/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 //assets import
+<<<<<<< HEAD:src/perks_applicationForm/perks.js
 import Accesibility from './assets/images/accesibility.png';
 import Allowance from './assets/images/allowance.png';
 import Gatherings from './assets/images/gathering.png';
@@ -13,6 +14,18 @@ import Mentorship from './assets/images/mentorship.png';
 //components import
 import NavBar from './navbar';
 import Form from './application_form';
+=======
+import Accesibility from '../../assets/images/accesibility.png';
+import Allowance from '../../assets/images/allowance.png';
+import Gatherings from '../../assets/images/gathering.png';
+import Mentorship from '../../assets/images/mentorship.png';
+import Picture from '../../assets/images/picBg.png'
+
+//components import
+import NavBar from '../../components/Navbar/navbar';
+import Form from '../Application/application_form.js';
+import Footer from '../../components/Footer/footer';
+>>>>>>> 9035d5b71c19c11005661b187b1ced5bce4c9700:src/Pages/Perks/perks.js
 
 function Perks() {
     return (
@@ -50,6 +63,9 @@ function Perks() {
                     
                     <Form className='absolute' />
                 </div>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     );
