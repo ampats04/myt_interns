@@ -9,7 +9,7 @@ import '../../css/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-//icons import
+//assets import
 import user from '../../assets/icons/user.png'
 import address from '../../assets/icons/location.png'
 import birthday from '../../assets/icons/date-of-birth.png'
@@ -21,10 +21,12 @@ import resume from '../../assets/icons/upload.png'
 
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
+import { isLetters, isNumber } from '../../utils/strings';
 
-function Form() {
+//
+export default function Form() {
     const [formData, setFormData] = useState({
-        name: '',
+        full_name: '',
         address: '',
         birthdate: '',
         contact: '',
@@ -34,6 +36,12 @@ function Form() {
         resume: null,
     });
 
+    const [isValid, setIsValid] = useState(true);
+    const [newName, setnewName] = useState(' '); 
+    const [checkEmail, setcheckEmail] = useState(' ');
+    const [checkPhone, setcheckPhone] = useState(' ');
+
+    
     const updateSelectedFile = (e) => {
         const selectedFile = e.target.files[0];
         setFormData({
@@ -41,10 +49,11 @@ function Form() {
             resume: selectedFile,
         });
     };
-
+    
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
-
+    
+    
         // For file input (resume)
         if (type === 'file') {
             setFormData({
@@ -55,18 +64,47 @@ function Form() {
             setFormData({
                 ...formData,
                 [name]: value,
+
+                
             });
         }
     };
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData); // You can handle the form data submission here
     };
     
-    return (
-        
+    const handleNameChange = (e) =>{
+        const isNewName = e.target.value;
+        const isValidName = isLetters(isNewName);
 
+        setIsValid(isValidName)
+        setnewName(isNewName)
+
+        setFormData({
+           
+            ...formData,
+            full_name: isNewName,
+        })
+    }
+
+    const handlePhoneChange = (e) => {
+        const isPhone = e.target.value;
+        const isValidPhone = isNumber(isPhone);
+
+        setIsValid(isValidPhone);
+        setcheckPhone(isPhone);
+
+        setFormData({
+            ...formData,
+            phone: isPhone,
+            
+        })
+    }
+    
+    return (
+    
         <div className='outerCont'>
             <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
             <div className='formContainer'>
@@ -78,18 +116,21 @@ function Form() {
                         <div className="input-field">
                             <img src={user} alt="user" />
                             <input
-                                id='name'
+                                id='full_name'
                                 type="text"
                                 placeholder="Name"
-                                className="input" />
-                        </div>
+                                value = {newName}
+                                className={`input ${isValid ? 'valid': 'invalid'}`}
+                                onChange={handleNameChange}/>
+                
+                        </div>      
                         <div className="input-field">
                             <img src={address} alt="user" />
-                            <input
-                                id='address'
-                                type="text"
-                                placeholder="Address"
-                                className="input" />
+                                <input
+                                    id='address'
+                                    type="text"
+                                    placeholder="Address"
+                                    className="input" />
                         </div>
                     </div>
 
@@ -109,11 +150,12 @@ function Form() {
                             <span>+63</span>
                             <input
                                 id='contact'
-                                type="text"
+                                type="number"
                                 maxLength={10} 
                                 placeholder="Contact"
-                                className="input"
-                                onChange={handleChange}
+                                value = {checkPhone}
+                                className={`input ${isValid ? 'valid': 'invalid'}`}
+                                onChange={handlePhoneChange}
                                 />
                         </div>
                         <div className="input-field">
@@ -165,6 +207,8 @@ function Form() {
         </div >
 
     );
+
+   
+    
 }
 
-export default Form;
