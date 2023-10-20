@@ -111,10 +111,12 @@ export default function Form() {
                         <div className="input-field col">
                             <img src={user} alt="" className='icons' />
                             <input
+                                id='full_name'
                                 type="text"
-                                id="user"
-                                placeholder='Enter Name'
-                                className="input" />
+                                value={newName}
+                                className={`input ${isValid ? 'valid' : 'invalid'}`}
+                                onChange={handleNameChange}
+                                placeholder="Name" />
                         </div>
                         <div className="input-field col">
                             <img src={address} alt="user" className='icons' />
@@ -138,12 +140,17 @@ export default function Form() {
                                 className="input" />
                         </div>
                         <div className="input-field col">
-                            <img src={phone} alt="user" className='icons' />
+                            <img src={phone} alt="user" />
+                            <span>+63</span>
                             <input
                                 id='contact'
-                                type="tel"
+                                type="number"
+                                maxLength={10}
                                 placeholder="Contact"
-                                className="input" />
+                                value={checkPhone}
+                                className={`input ${isValid ? 'valid' : 'invalid'}`}
+                                onChange={handlePhoneChange}
+                            />
                         </div>
                         <div className="input-field col">
                             <img src={email} alt="user" className='icons' />
