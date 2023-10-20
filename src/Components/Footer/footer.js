@@ -3,10 +3,10 @@ import '../../css/styles.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import discordSVG from "../../Assets/svg/discordsvg.svg"
-import emailSVG from "../../Assets/svg/emailsvg.svg"
-import facebookSVG from "../../Assets/svg/facebooksvg.svg"
-import githubSVG from "../../Assets/svg/githubsvg.svg"
+import discordSVG from "../../assets/svg/discordsvg.svg"
+import emailSVG from "../../assets/svg/emailsvg.svg"
+import facebookSVG from "../../assets/svg/facebooksvg.svg"
+import githubSVG from "../../assets/svg/githubsvg.svg"
 
 import React from 'react';
 
