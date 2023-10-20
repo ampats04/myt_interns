@@ -17,7 +17,9 @@ import phone from './assets/icons/call.png'
 import email from './assets/icons/mail.png'
 import course from './assets/icons/learning.png'
 import university from './assets/icons/college.png'
-import resume from './assets/icons/upload.png'
+import resume from './assets/icons/upload.png';
+import Logo from './assets/images/moduleZeroLogo.png';
+
 
 import React, { useState } from 'react';
 

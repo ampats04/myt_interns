@@ -20,11 +20,8 @@
     font-size: 1.3rem;
 }
 
-.cont{
+.container{
     width: 100%;
-    place-content: center;
-    place-items: center;
-    text-align: center;
 }
 
 /* colors */
@@ -47,11 +44,26 @@
     text-align: center;
 }
 
-.logo {
-    width: 10rem;
+.logo-cont {
+    width: 100%;
     height: auto;
+    position: absolute;
+    padding: 0.5rem;
+    text-align: center;
 }
 
+.logo-appForm {
+    width: 20rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 10rem;
+}
 
 /* PERKS SECTION STYLING */
 .perksContainer {
@@ -63,10 +75,9 @@
 
 .cardContainer {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-top: 1.5rem;
 }
 
@@ -76,15 +87,23 @@
     margin: 1rem;
 }
 
-.card {
-    width: 15rem;
+.card-item {
+    width: 80%;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    height: 25rem;
+    border: #3E3E40 2px solid;
+    margin-bottom: 2rem;
 }
 
 .cardTitle {
+    font-weight: bolder;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0;    
+}
+
+.cardContent{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* PERKS SECTION STYLING */
@@ -109,6 +128,7 @@
     margin: 0.5rem;
     border-radius: 2rem;
     border: 0.5rem solid rgb(209, 209, 209);
+    place-items: center;
 }
 
 .row{
@@ -130,9 +150,10 @@
 .formContainer {
     overflow: hidden;
     border: #5BC9E4 5px solid;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     border-radius: 1rem;
-    margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -144,7 +165,7 @@
     border-radius: 0.5rem;
     background: transparent;
     height: 3rem;
-    padding: 1rem;
+    padding: 1.8rem;
     color: #3E3E40;
     place-items: center;
     margin-bottom: 2.5rem;
@@ -182,8 +203,7 @@
 }
 
 .button{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
@@ -241,8 +261,14 @@ nav {
         place-items: center;
     }
 
+    .card-item{
+        width: 16rem;        
+    }
+
     .card {
         margin-bottom: 2.5rem;
+        height: 30rem;
+        overflow: hidden;
     }
 }
 
@@ -261,6 +287,8 @@ nav {
         justify-content: center;
         left: 6%;
     }
+
+    
 }
 
 @media screen and (min-width: 576px) {
