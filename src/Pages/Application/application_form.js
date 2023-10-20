@@ -20,6 +20,7 @@ import university from '../../Assets/icons/college.png'
 import resume from '../../Assets/icons/upload.png'
 
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
 
 function Form() {
     const [formData, setFormData] = useState({
@@ -40,7 +41,6 @@ function Form() {
             resume: selectedFile,
         });
     };
-
 
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
@@ -63,8 +63,9 @@ function Form() {
         e.preventDefault();
         console.log(formData); // You can handle the form data submission here
     };
-
+    
     return (
+        
 
         <div className='outerCont'>
             <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
@@ -96,20 +97,24 @@ function Form() {
                     <div className='second-row flex gap-5'>
                         <div className="input-field">
                             <img src={birthday} alt="user" />
-                            <input
-                                type="date"
-                                id="birthdate"
-                                value={formData.birthdate}
-                                onChange={handleChange}
-                                className="input" />
+                           <input
+                            id = 'birthdate'
+                            type="text"
+                            className="input"
+                            
+                           />
                         </div>
                         <div className="input-field">
                             <img src={phone} alt="user" />
+                            <span>+63</span>
                             <input
                                 id='contact'
-                                type="tel"
+                                type="text"
+                                maxLength={10} 
                                 placeholder="Contact"
-                                className="input" />
+                                className="input"
+                                onChange={handleChange}
+                                />
                         </div>
                         <div className="input-field">
                             <img src={email} alt="user" />
