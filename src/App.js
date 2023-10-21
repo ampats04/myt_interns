@@ -4,8 +4,7 @@ import './css/App.css';
 
 import React from 'react';
 
-import MainPage from './components/MainPage/mainPage';
-
+import MainPage from './Components/MainPage/mainPage';
 
 
 function App() {
