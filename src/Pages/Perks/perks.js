@@ -11,7 +11,7 @@ import Gatherings from '../../Assets/images/gathering.png';
 import Mentorship from '../../Assets/images/mentorship.png';
 
 //components import
-import Form from '../Application/application_form';
+import Form from '../../Pages/Application/application_form';
 
 function Perks() {
     return (

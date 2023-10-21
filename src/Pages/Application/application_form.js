@@ -101,7 +101,7 @@ export default function Form() {
     }
 
     return (
-        <div className='outerCont'>
+        <div className='outerCont' id='apply'>
             <div className='formContainer'>
                 <h4 className='header-normal'>INTERNSHIP APPLICATION FORM</h4>
                 <form onSubmit={handleSubmit} className='form'>
