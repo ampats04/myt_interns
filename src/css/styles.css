@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* GENERAL STYLING */
-* {
+*,
+*:before,
+*:after {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* font sizes */
@@ -15,7 +20,9 @@
     font-size: 1.3rem;
 }
 
-
+.container{
+    width: 100%;
+}
 
 /* colors */
 .color-main {
@@ -40,8 +47,23 @@
 .logo {
     width: 20rem;
     height: auto;
+    position: absolute;
+    padding: 0.5rem;
+    text-align: center;
 }
 
+.logo-appForm {
+    width: 20rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 10rem;
+}
 
 /* PERKS SECTION STYLING */
 .perksContainer {
@@ -53,10 +75,9 @@
 
 .cardContainer {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-top: 1.5rem;
 }
 
@@ -66,42 +87,81 @@
     margin: 1rem;
 }
 
-.card {
-    width: 15rem;
-    border: 1px solid black;
+.card-item {
+    width: 80%;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    height: 25rem;
+    border: #3E3E40 2px solid;
+    margin-bottom: 2rem;
 }
 
 .cardTitle {
+    font-weight: bolder;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0;    
+}
+
+.cardContent{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* PERKS SECTION STYLING */
 
+.contain{
+    width: 100%;
+    background-color: #3E3E40;
+    align-items: center;
+    justify-content: center;    
+}
+
+
 /* APPLICATION FORM SECTION STYLING */
 .background-pic{
     position: relative;
-    background-image: url('../assets/images/picBg.png');
+    background-image: url('../Assets/images/bgImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border: 0.5rem solid rgb(209, 209, 209);
+    place-items: center;
 }
 
+.first-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.form{
+    justify-content: center;
+    width: 100%;
+}
 
 .outerCont {
-    margin: 2rem;
+    margin: 1rem;
     margin-bottom: 5rem;
 }
 
 .formContainer {
-   overflow: hidden;
-    border: #5BC9E4 2px solid;
-    padding: 2rem;
+    overflow: hidden;
+    border: #5BC9E4 5px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .input-field {
@@ -111,11 +171,10 @@
     border-radius: 0.5rem;
     background: transparent;
     height: 3rem;
+    padding: 1.8rem;
     color: #3E3E40;
     place-items: center;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     width: 100%;
 }
 
@@ -124,6 +183,10 @@
     border: none;
     width: 100%;
     margin-left: 0.8rem;
+}
+
+.input:focus{
+    outline: none;
 }
 
 .resume-input {
@@ -146,6 +209,7 @@
 }
 
 .button{
+    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
@@ -153,6 +217,11 @@
     border-radius: 1rem;
     border: #3E3E40 2px solid;
 
+}
+
+.icons{
+    width: 20px;
+    height: auto;
 }
 
 /* APPLICATION FORM SECTION STYLING */
@@ -213,7 +282,19 @@
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 0px) {}
+@media screen and (max-width: 990px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media (max-width: 700px){
+    .background-pic{
+        width: 100%;
+        margin: 0;
+    }
+}
 
 @media screen and (min-width: 576px) {
     .cardContainer {
@@ -235,8 +316,14 @@
         place-items: center;
     }
 
+    .card-item{
+        width: 16rem;        
+    }
+
     .card {
         margin-bottom: 2.5rem;
+        height: 30rem;
+        overflow: hidden;
     }
 }
 
@@ -249,7 +336,15 @@
     }
 }
 
-@media screen and (min-width: 1200) {}
+@media screen and (min-width: 1200) {
+    .background-pic{
+        width: 70rem;
+        justify-content: center;
+        left: 6%;
+    }
+
+    
+}
 
 @media screen and (max-width: 648px) {
     .nav-links::after{

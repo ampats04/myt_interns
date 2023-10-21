@@ -8,8 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-scroll';
 
-
-import Logo from '../../assets/images/moduleZeroLogo.png'
+import Logo from '../../Assets/images/moduleZeroLogo.png'
 
 
 function NavBar() {

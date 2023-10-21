@@ -10,17 +10,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 //assets import
-import user from '../../assets/icons/user.png'
-import address from '../../assets/icons/location.png'
-import birthday from '../../assets/icons/date-of-birth.png'
-import phone from '../../assets/icons/call.png'
-import email from '../../assets/icons/mail.png'
-import course from '../../assets/icons/learning.png'
-import university from '../../assets/icons/college.png'
-import resume from '../../assets/icons/upload.png'
+import user from '../../Assets/images/user.png'
+import address from '../../Assets/images/location.png'
+import birthday from '../../Assets/images/date-of-birth.png'
+import phone from '../../Assets/images/call.png'
+import email from '../../Assets/images/mail.png'
+import course from '../../Assets/images/learning.png'
+import university from '../../Assets/images/college.png'
+import resume from '../../Assets/images/upload.png'
 
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
 import { isLetters, isNumber } from '../../utils/strings';
 
 //
@@ -37,11 +36,11 @@ export default function Form() {
     });
 
     const [isValid, setIsValid] = useState(true);
-    const [newName, setnewName] = useState(' '); 
+    const [newName, setnewName] = useState(' ');
     const [checkEmail, setcheckEmail] = useState(' ');
     const [checkPhone, setcheckPhone] = useState(' ');
 
-    
+
     const updateSelectedFile = (e) => {
         const selectedFile = e.target.files[0];
         setFormData({
@@ -49,11 +48,11 @@ export default function Form() {
             resume: selectedFile,
         });
     };
-    
+
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
-    
-    
+
+
         // For file input (resume)
         if (type === 'file') {
             setFormData({
@@ -64,18 +63,16 @@ export default function Form() {
             setFormData({
                 ...formData,
                 [name]: value,
-
-                
             });
         }
     };
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData); // You can handle the form data submission here
     };
-    
-    const handleNameChange = (e) =>{
+
+    const handleNameChange = (e) => {
         const isNewName = e.target.value;
         const isValidName = isLetters(isNewName);
 
@@ -83,7 +80,7 @@ export default function Form() {
         setnewName(isNewName)
 
         setFormData({
-           
+
             ...formData,
             full_name: isNewName,
         })
@@ -99,67 +96,64 @@ export default function Form() {
         setFormData({
             ...formData,
             phone: isPhone,
-            
+
         })
     }
-    
+
     return (
-    
         <div className='outerCont' id='apply'>
-            <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
             <div className='formContainer'>
                 <h4 className='header-normal'>INTERNSHIP APPLICATION FORM</h4>
                 <form onSubmit={handleSubmit} className='form'>
 
                     {/* FIRST ROW */}
-                    <div className='first-row'>
-                        <div className="input-field">
-                            <img src={user} alt="user" />
+                    <div className='row'>
+                        <div className="input-field col">
+                            <img src={user} alt="" className='icons' />
                             <input
                                 id='full_name'
                                 type="text"
-                                placeholder="Name"
-                                value = {newName}
-                                className={`input ${isValid ? 'valid': 'invalid'}`}
-                                onChange={handleNameChange}/>
-                
-                        </div>      
-                        <div className="input-field">
-                            <img src={address} alt="user" />
-                                <input
-                                    id='address'
-                                    type="text"
-                                    placeholder="Address"
-                                    className="input" />
+                                value={newName}
+                                className={`input ${isValid ? 'valid' : 'invalid'}`}
+                                onChange={handleNameChange}
+                                placeholder="Name" />
+                        </div>
+                        <div className="input-field col">
+                            <img src={address} alt="user" className='icons' />
+                            <input
+                                id='address'
+                                type="text"
+                                placeholder="Address"
+                                className="input" />
                         </div>
                     </div>
 
                     {/* SECOND ROW */}
-                    <div className='second-row flex gap-5'>
-                        <div className="input-field">
-                            <img src={birthday} alt="user" />
-                           <input
-                            id = 'birthdate'
-                            type="text"
-                            className="input"
-                            
-                           />
+                    <div className='row'>
+                        <div className="input-field col">
+                            <img src={birthday} alt="user" className='icons' />
+                            <input
+                                type="date"
+                                id="birthdate"
+                                value={formData.birthdate}
+                                onChange={handleChange}
+                                className="input" />
                         </div>
-                        <div className="input-field">
+                        <div className="input-field col">
                             <img src={phone} alt="user" />
                             <span>+63</span>
                             <input
                                 id='contact'
                                 type="number"
-                                maxLength={10} 
+                                maxLength={10}
                                 placeholder="Contact"
-                                value = {checkPhone}
-                                className={`input ${isValid ? 'valid': 'invalid'}`}
+                                value={checkPhone}
+                                className={`input ${isValid ? 'valid' : 'invalid'}`}
                                 onChange={handlePhoneChange}
-                                />
+                            />
                         </div>
-                        <div className="input-field">
-                            <img src={email} alt="user" />
+                        <div className="input-field col">
+                            <img src={email} alt="user" className='icons' />
                             <input
                                 id='email'
                                 type="email"
@@ -170,25 +164,25 @@ export default function Form() {
 
 
                     {/* THIRD ROW */}
-                    <div className='third-row'>
-                        <div className="input-field">
-                            <img src={course} alt="user" />
+                    <div className='row'>
+                        <div className="input-field col">
+                            <img src={course} alt="user" className='icons' />
                             <input
                                 type="text"
                                 id="course"
                                 placeholder="Course"
                                 className="input" />
                         </div>
-                        <div className="input-field">
-                            <img src={university} alt="user" />
+                        <div className="input-field col">
+                            <img src={university} alt="user" className='icons' />
                             <input
                                 id='uni'
                                 type="text"
                                 placeholder="University"
                                 className="input" />
                         </div>
-                        <div className="input-field">
-                            <img src={resume} alt="user" />
+                        <div className="input-field col">
+                            <img src={resume} alt="user" className='icons' />
                             <input
                                 id='resume'
                                 type="file"
@@ -203,11 +197,7 @@ export default function Form() {
                     </div>
                 </form>
             </div >
-        </div >
-
+        </div>
     );
-
-   
-    
 }
 
