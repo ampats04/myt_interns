@@ -105,7 +105,7 @@ export default function Form() {
     
     return (
     
-        <div className='outerCont'>
+        <div className='outerCont' id='apply'>
             <h4 className='headerWeight t-lg'>BE AN INTERN AT <span className='t-lg color-main'>MYT</span></h4>
             <div className='formContainer'>
                 <h4 className='header-normal'>INTERNSHIP APPLICATION FORM</h4>
@@ -201,7 +201,6 @@ export default function Form() {
                     <div className='button-container'>
                         <button className='button' type="submit">SUBMIT APPLICATION</button>
                     </div>
-
                 </form>
             </div >
         </div >

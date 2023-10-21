@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './technology_stack.css';
-import Slider from '../../components/Carousel/slider';
+import Slider from '../../Components/Carousel/slider';
 
 
 // images
@@ -17,7 +17,7 @@ function TechstackAndInterns() {
     return (
       
       <div class="container App">
-      <h1 class="techstack-header ">TECHNOLOGY STACK</h1>
+      <h1 class="techstack-header ">TECHNOLOGY <span class='intern-color'>STACK</span></h1>
 
 
       <div class="row justify-content-center img-margin">

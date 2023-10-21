@@ -12,15 +12,14 @@ import Mentorship from '../../assets/images/mentorship.png';
 import Picture from '../../assets/images/picBg.png'
 
 //components import
-import NavBar from '../../components/Navbar/navbar';
+import NavBar from '../../Components/Navbar/navbar';
 import Form from '../Application/application_form.js';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../Components/Footer/footer';
 
 function Perks() {
     return (
         <div>
-            <NavBar />
-            <div className='perksContainer'>
+            <div className='perksContainer' id='perks'>
                 <h4 className='headerWeight t-lg'>INTERNSHIP <span className='t-lg color-main'>PERKS</span></h4>
                 <div className='cardContainer'>
                     <div className='card'>
@@ -50,7 +49,6 @@ function Perks() {
                 <Form className='absolute' />
             </div>
             <div>
-                <Footer/>
             </div>
         </div>
     );
