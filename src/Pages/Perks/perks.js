@@ -11,14 +11,11 @@ import Gatherings from '../../Assets/images/gathering.png';
 import Mentorship from '../../Assets/images/mentorship.png';
 
 //components import
-import NavBar from '../../Components/Navbar/navbar';
 import Form from '../Application/application_form';
-import Footer from '../../Components/Footer/footer';
 
 function Perks() {
     return (
         <div>
-            <NavBar />
             <div className='perksContainer'>
                 <h4 className='headerWeight t-lg'>INTERNSHIP <span className='t-lg color-main'>PERKS</span></h4>
                 <div className='cardContainer'>
@@ -52,7 +49,6 @@ function Perks() {
                 </div>
             </div>
             <div>
-                <Footer/>
             </div>
         </div>
     );
