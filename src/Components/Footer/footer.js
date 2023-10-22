@@ -15,7 +15,7 @@ function Footer() {
         <div className="container-fluid bg-body-secondary">
             <div className='container pb-3'>
                 <div className='grid-container d-flex justify-content-center'>
-                    <div class="soc-med-icons d-flex gap-4">
+                    <div class="d-flex gap-4">
                         <div class="svg-footer-icons">
                             <a href='#'><img src={discordSVG} className='svg-footer-icons' /></a>
                         </div>
